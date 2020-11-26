@@ -1,0 +1,24 @@
+{
+  "servidor": "mi_server",
+  "equipo": [{"name":"Miguel","last name":"Bui"}]
+},
+
+{
+  "servidor": "mi_server",
+  "equipo": [{"name":"Daniel","last name":"Zapata"}]
+},
+
+{
+  "servidor": "mi_server",
+  "equipo": [{"name":"Adan","last name":"Ramirez"}]
+},
+
+{
+  "servidor": "mi_server",
+  "equipo": [{"name":"Aketzalli","last name":"Garcia"}]
+},
+
+{
+  "servidor": "mi_server",
+  "equipo": [{"name":"Tania","last name":"Yanes"}]
+},
