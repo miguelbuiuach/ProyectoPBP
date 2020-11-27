@@ -1,24 +1,10 @@
 {
   "servidor": "mi_server",
-  "equipo": [{"name":"Miguel","last name":"Bui"}]
-},
-
-{
-  "servidor": "mi_server",
-  "equipo": [{"name":"Daniel","last name":"Zapata"}]
-},
-
-{
-  "servidor": "mi_server",
-  "equipo": [{"name":"Adan","last name":"Ramirez"}]
-},
-
-{
-  "servidor": "mi_server",
-  "equipo": [{"name":"Aketzalli","last name":"Garcia"}]
-},
-
-{
-  "servidor": "mi_server",
-  "equipo": [{"name":"Tania","last name":"Yanes"}]
-},
+  "equipo": [
+            {"name":"Miguel","lastName": "Bui"}, 
+            {"name": "Daniel", "lastName": "Zapata"},
+            {"name": "Adan", "lastName": "Ramirez"},
+            {"name": "Aketzalli", "lastName": "Garcia"},
+            {"name": "Tania", "lastName": "Yanes"},
+            ]
+}
