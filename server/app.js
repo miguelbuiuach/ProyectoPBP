@@ -28,7 +28,15 @@ http.createServer((request, response)=>{
           response.writeHead(200, {"Content-Type": "image/jpg"});
         }else if (file.split('.').pop() == 'pdf') {
           response.writeHead(200, {"Content-Type": "application/pdf"});
-        }else {
+		  
+        }
+		
+		else if (file.split('.').pop() == 'css') {
+          response.writeHead(200, {"Content-Type": "text/css;"});
+		  
+        }
+		
+		else {
           response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
         }
         // Contenido del cuerpo de la respuesta
