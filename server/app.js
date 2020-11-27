@@ -26,6 +26,8 @@ http.createServer((request, response)=>{
           response.writeHead(200, {"Content-Type": "image/png"});
         }else if (file.split('.').pop() == 'jpg') {
           response.writeHead(200, {"Content-Type": "image/jpg"});
+        }else if (file.split('.').pop() == 'pdf') {
+          response.writeHead(200, {"Content-Type": "application/pdf"});
         }else {
           response.writeHead(200, {"Content-Type": "text/html"});
         }
