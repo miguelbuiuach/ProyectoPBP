@@ -1,32 +1,390 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset ="utf-8">
-    <title>Proyecto PBP</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <h1>Proyecto Desarrollo Basado en Plataformas</h1>
-    <h2>Informaci&oacute;n</h2>
 
-    <img id="logo-ing" src="./logoIng.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Usual Suspects Co</title>
+    <!--
+
+    Template 2103 Central
+
+	http://www.tooplate.com/view/2103-central
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <!-- tooplate style -->
+
+    <script>
+        var renderPage = true;
+
+        if (navigator.userAgent.indexOf('MSIE') !== -1
+            || navigator.appVersion.indexOf('Trident/') > 0) {
+
+            alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+            renderPage = false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="container">
+        <section class="tm-section-head" id="top">
+            <header id="header" class="text-center tm-text-gray">
+                <h1>The Usual Suspects Co.</h1>
+                <p>A subdivision of Marshall, Carter & Dark, Ltd</p>
+            </header>
+
+            <nav class="navbar narbar-light">
+                <a class="navbar-brand tm-text-gray" href="#">
+                    Menu
+                </a>
+                <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon tm-fa-toggler-icon"></i>
+                    </span>
+                </button>
+                <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="#top">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="#tm-section-2">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-text-gray" href="#tm-section-6">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="navbar navbar-default navbar-fixed-top">
+                <a href="/index.html" class="navbar-brand"></a>
+                <botton class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </botton>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="mydropdown">
+
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">info</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="row" id="tm-section-1">
+            <div class="col-lg-12 tm-slider-col">
+                <div class="tm-img-slider">
+                    <div class="tm-img-slider-item" href="img/gallery-img-01.jpg">
+                        <p class="tm-slider-caption">Leaders of 3rd Party website development in México</p>
+                        <img src="img/gallery-img-01.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                    <div class="tm-img-slider-item" href="img/gallery-img-02.jpg">
+                        <p class="tm-slider-caption">Quality, timely and effective solution to your web develompent problems</p>
+                        <img src="img/gallery-img-02.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                    <div class="tm-img-slider-item" href="img/gallery-img-03.jpg">
+                        <p class="tm-slider-caption">World Wide Recognition </p>
+                        <img src="img/gallery-img-03.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                    <div class="tm-img-slider-item" href="img/gallery-img-04.jpg">
+                        <p class="tm-slider-caption">Satisfied clients: YouTube, Facebook, Verizon and More!</p>
+                        <img src="img/gallery-img-04.jpg" alt="Image" class="tm-slider-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tm-section-2 tm-section-mb" id="tm-section-2">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
+                    <header class="text-center">
+                        <i class="fa fa-4x fa-power-off pl-5 pb-5 pr-5 pt-2"></i>
+                    </header>
+
+                    <h2>Our Mission</h2>
+                    <p>Our Mission is to always give our customers what they deserver. Providing quality at afordable rates, on time, with efficiency and
+                      with a professional edge that no one else in the market has</p>
+
+                    <a href="#tm-section-3" class="btn tm-btn-pad-2 float-right">Learn More</a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
+                    <header class="text-center">
+                        <i class="fa fa-4x fa-bolt pl-5 pb-5 pr-5 pt-2"></i>
+                    </header>
+                    <h2>Our Vision</h2>
+                    <p> Our Vision is to see a world where no company has to be troubled by developing a website as long as we can help them with that
+                    </p>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-12">
+                    <h2>Our Values</h2>
+                    <p>+ Honestity </p>
+                    <p>+ Integrity </p>
+                    <p>+ Compromise </p>
+                    <p>+ Respect </p>
+                    <p>+ Excellence </p>
+                    <p>+ Diversity </p>
+                    <p>+ Collaboration </p>
+                    <p>+ Ethics </p>
+                    <p>+ Morals </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tm-section-3 tm-section-mb" id="tm-section-3">
+            <div class="row">
+                <div class="col-md-6 tm-mb-sm-4 tm-2col-l">
+                    <div class="image">
+                        <img src="img/tm-img-1.jpg" class="img-fluid" />
+                    </div>
+                    <div class="tm-box-3">
+                        <h2>Meet our Team</h2>
+                        <p> Our team of professional programmers, graphic designers and artist it’s more than ready to make your dream project come true.
+                          <br>
+                          As the leading company for 3rd Party software development in México,
+                           we will be more than happy to work with you.</p>
+                        <div class="text-center">
+                            <a href="#tm-section-5" class="btn btn-big">Meet them Yourself</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 tm-2col-r">
+                    <div class="image">
+                        <img src="img/tm-img-2.jpg" class="img-fluid" />
+                    </div>
+                    <div class="tm-box-3">
+                        <header>
+                            <h2>Our Story</h2>
+                        </header>
+                        <p> With over 12 years of experience as one of the leading web developers in México, it’s hard to imagine that we just
+                          started as an idea in the back of the mind our founder, Ezekiel Marshall, who started the company with one thing in mind.
+                          Provide web development solution to those who do not have dedicated team to build their website.
+                           With this in mind, The Usual Suspects set its mind to become to go to company to create a personalized and masterfully built website. </p>
+                        <div class="text-center">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tm-section-4 tm-section-mb" id="tm-section-4">
+            <div class="row">
+
+            </div>
+        </section>
+
+        <section class="tm-section-5" id="tm-section-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="image fit">
+                        <img src="img/tm-sc4-img-1.jpg" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12 col-sm-12 pl-lg-0">
+                    <div class="media tm-media">
+                        <img src="img/sc4-img-2.jpg" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Daniel Alberto Zapata Jimenez</h2>
+                            <p class="mb-0">Our chief Graphical Designer, with over 15 years of experience using Adobe Suite, Sony Vegas, and multiple audio editing software. You can be sure that
+                            your company will get the sharpest look and desing. You can see his resume <A HREF="resumes/DanielCV.pdf"  target="_blank"> here </A> </p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="img/sc4-img-3.jpg" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Tania Lizbeth Yañez Aguilar</h2>
+                            <p class="mb-0"> Our Chief QA, with more than 10 years of experience working as QA for multiple companies like Verizon, Facebook and Tesla. With her in charge, you know
+                            your website will be top quality. You can see her resume <A HREF="resumes/TaniaCV.pdf" target="_blank"> here </A> </p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="img/sc4-img-4.jpg" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Adan Alejandro Ramirez Quintero</h2>
+                            <p class="mb-0"> Our Chief Mobile Developer, 12 years of experience in everything related for mobile web development. You can be sure that Adan and his Team
+                              will do everything in their power so your website works properly on both desktop and mobile. You can check his resume <A HREF="resumes/AdanCV.pdf"  target="_blank"> here </A> </p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="img/sc4-img-5.jpg" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Monica Aketzalli Garcia Medina</h2>
+                            <p class="mb-0"> We know that the world is moving fast and changing every single day. That's why we have started a new venture into mobile app development under the
+                             managment of Aketzalli, with a Master in mobile development and over 5 years of experience working with Android and iOS, you can be sure that you'll get top of the line
+                           app development. <A HREF="resumes/AktezalliCV.pdf" target="_blank"> here </A>  </p>
+                        </div>
+                    </div>
+                    <div class="media tm-media">
+                        <img src="img/sc4-img-6.jpg" class="img-responsive tm-media-img">
+                        <div class="media-body tm-box-5">
+                            <h2>Miguel Angel Bui Rosas</h2>
+                            <p class="mb-0"> Our lead Programmer, who has been working with JS, HTML and PHP for over 15 years. With projects in companies such as Faceook, Twitter, Yahoo and MySpace. His expertise is
+                            one of The Usual Suspect's most valuable assets. He and his team will make sure your website runs smootlhy and without issues. You can see his resume <A HREF="resumes/MiguelCV.pdf" target="_blank"> here </A> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tm-section-6" id="tm-section-6">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-xs-12">
+                    <div class="contact_message">
+                        <form action="" method="post" class="contact-form">
+                            <div class="row mb-2">
+                                <div class="form-group col-xl-6">
+                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
+                                </div>
+                                <div class="form-group col-xl-6 pl-xl-1">
+                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn  tm-btn-submit float-right btn-big">Send It Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-xs-12 tm-contact-right">
+                    <div class="tm-address-box">
+                        <h2 class="mb-4">Contact Us</h2>
+                        <p class="mb-5">For any inquiry or question you may have about our services, our team or our rates, please do not hesitate of contacting us
+                        using this form or the information we have here: </p>
+                        <address>
+                            123 Calle Principal, C.P. 00000
+                            <br> Chihuahua, Chihuahua,
+                            <br> Phone: 000-123-45-67
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-5">
+            <p class="text-center">Copyright © 2020 Marshall, Carter & Dark, Ltd - Design: Tooplate</p>
+        </footer>
+    </div>
+
+    <!-- load JS files -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- https://popper.js.org/ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Slick Carousel -->
+
+    <script>
+        function setCarousel() {
+            var slider = $('.tm-img-slider');
+
+            if (slider.hasClass('slick-initialized')) {
+                slider.slick('destroy');
+            }
+
+            if ($(window).width() > 991) {
+                slider.slick({
+                    autoplay: true,
+                    fade: true,
+                    speed: 800,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            } else {
+                slider.slick({
+                    autoplay: true,
+                    fade: true,
+                    speed: 800,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            if (renderPage) {
+                $('body').addClass('loaded');
+            }
+
+            setCarousel();
+
+            $(window).resize(function () {
+                setCarousel();
+            });
+
+            $('.nav-link').click(function () {
+                $('#mainNav').removeClass('show');
+            });
 
 
-    <h3>Integrantes del equipo</h3>
-    <ul>
-      <li>Miguel Angel Bui Rosas 320704</li>
-      <li>Tania Lizbeth Ya&ntilde;es Aguilar 317807</li>
-      <li>Daniel Alberto Zapata Jimenez 299474</li>
-      <li>Adan Alejandro Ramirez Quinteros 312730</li>
-      <li>Monica Aketzalli Garcia Medina 299437</li>
-    </ul>
-    <h3>m&aacute;s informaci&oacute;n</h3>
+            $('a[href*="#"]')
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top + 1
+                            }, 1000, function () {
 
-  </body>
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1');
+                                    $target.focus();
+                                };
+                            });
+                        }
+                    }
+                });
+        });
+    </script>
+
+</body>
 
 </html>
