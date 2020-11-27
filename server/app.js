@@ -29,7 +29,7 @@ http.createServer((request, response)=>{
         }else if (file.split('.').pop() == 'pdf') {
           response.writeHead(200, {"Content-Type": "application/pdf"});
         }else {
-          response.writeHead(200, {"Content-Type": "text/html"});
+          response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
         }
         // Contenido del cuerpo de la respuesta
 
