@@ -1,4 +1,4 @@
 package mx.uach.usualapp.models
 
-class suspect {
+class suspect(val firstname: String, val lastname : String){
 }
