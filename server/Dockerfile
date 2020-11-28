@@ -1,10 +1,10 @@
 FROM node:current-slim
 
 WORKDIR /usr/src/app
-COPY package.json .
+COPY package.json ./
 RUN npm install
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD [ "node", "app.js" ]
 
 COPY . .
