@@ -7,28 +7,33 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/TVSus"
-        android:layout_width="372dp"
-        android:layout_height="46dp"
+        android:id="@+id/TVSusn"
+        android:layout_width="166dp"
+        android:layout_height="47dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="2dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnSus"
-        android:layout_width="364dp"
-        android:layout_height="51dp"
+    <TextView
+        android:id="@+id/TVSusl"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="2dp"
-        android:text="@string/goTo"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVSus" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

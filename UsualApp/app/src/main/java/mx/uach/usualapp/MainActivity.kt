@@ -13,6 +13,7 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import mx.uach.usualapp.Adapters.suspectAdapter
+import mx.uach.usualapp.models.Team
 import mx.uach.usualapp.models.suspect
 
 class MainActivity : AppCompatActivity() {
@@ -21,20 +22,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //this variable was not getting recognized when we referenced it later on, left here as an
         //example to do stupid stuff it it means it will work
-        val sus = findViewById<RecyclerView>(R.id.rvSuspects)
 
         val queue = Volley.newRequestQueue(this)
         val url = "https://raw.githubusercontent.com/miguelbuiuach/ProyectoPBP/master/server/about/about.json"
 
+        val sus = findViewById<RecyclerView>(R.id.rvSuspects)
 
         val jsonRequest : StringRequest = StringRequest(Request.Method.GET, url, Response.Listener { response->
             //Log.i("JSON", response.toString())
             val gson = Gson()
-            val itemType = object : TypeToken<List<suspect>>(){}.type
-            val suspects : List<suspect> = gson.fromJson(response.toString(), itemType)
-            //referenced this directly because it didn work otherwise
-            findViewById<RecyclerView>(R.id.rvSuspects).adapter = suspectAdapter(suspects)
-            findViewById<RecyclerView>(R.id.rvSuspects).layoutManager = LinearLayoutManager(this)
+            val team : Team = gson.fromJson(response.toString(), Team::class.java)
+            val suspects : List<suspect> = team.equipo
+            sus.adapter = suspectAdapter(suspects)
+            sus.layoutManager = LinearLayoutManager(this)
 
             Log.i("SUSPECTS", suspects.toString())
 
