@@ -1,10 +1,25 @@
 {
   "servidor": "mi_server",
   "equipo": [
-            {"name":"Miguel","lastName": "Bui"}, 
-            {"name": "Daniel", "lastName": "Zapata"},
-            {"name": "Adan", "lastName": "Ramirez"},
-            {"name": "Aketzalli", "lastName": "Garcia"},
-            {"name": "Tania", "lastName": "Yanes"},
+            {
+                "name":"Miguel",
+                "lastName": "Bui"
+            }, 
+            {
+                "name": "Daniel",
+                "lastName": "Zapata"
+            },
+            {
+                "name": "Adan",
+                "lastName": "Ramirez"
+            },
+            {
+                "name": "Aketzalli", 
+                "lastName": "Garcia"
+            },
+            {
+                "name": "Tania", 
+                "lastName": "Yanes"
+            },
             ]
 }
