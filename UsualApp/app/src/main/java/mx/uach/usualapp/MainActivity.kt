@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val sus = findViewById<RecyclerView>(R.id.rvSuspects)
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://pastebin.com/raw/nfAYJYfu"
+        val url = "https://raw.githubusercontent.com/miguelbuiuach/ProyectoPBP/master/server/about/about.json"
 
 
         val jsonRequest : StringRequest = StringRequest(Request.Method.GET, url, Response.Listener { response->
