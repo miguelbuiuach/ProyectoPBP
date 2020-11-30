@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //this variable was not getting recognized when we referenced it later on, left here as an
+        //example to do stupid stuff it it means it will work
         val sus = findViewById<RecyclerView>(R.id.rvSuspects)
 
         val queue = Volley.newRequestQueue(this)
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             val gson = Gson()
             val itemType = object : TypeToken<List<suspect>>(){}.type
             val suspects : List<suspect> = gson.fromJson(response.toString(), itemType)
-
+            //referenced this directly because it didn work otherwise
             findViewById<RecyclerView>(R.id.rvSuspects).adapter = suspectAdapter(suspects)
             findViewById<RecyclerView>(R.id.rvSuspects).layoutManager = LinearLayoutManager(this)
 
